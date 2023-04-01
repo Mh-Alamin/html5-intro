@@ -19,9 +19,39 @@
             border:1px solid lightgray;
             padding:5px 10px;
         }
+
+        nav ul{
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li{
+           padding:5px;
+        }
+
+        nav ul li a{
+           text-decoration: none;
+           color:black;
+           font-size:22px;
+        }
+
+        nav ul li a:hover{
+            background-color: aliceblue;
+        }
     </style>
 </head>
 <body>
+    <header>
+         <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+         </nav>
+    </header>
+
     <h1>Explore Audio and Video</h1>
     <audio src="assets/audio/goat.mp3" controls></audio>
     <video src="assets/video/big_buck_bunny_720p_2mb.mp4" controls width="250"></video>
@@ -126,5 +156,7 @@
             </tr>
         </tbody>
     </table>
+
+
 </body>
 </html>
