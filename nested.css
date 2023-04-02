@@ -41,3 +41,31 @@
 .navbar a:hover, .sub-menu:hover .subnavbtn{
     background-color: red;
 } 
+
+/* Style the subnav content - positioned absolute */
+.sub-menu-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: red;
+    width: 100%;
+    z-index: 1;
+  }
+
+  /* Style the subnav links */
+  .sub-menu-content  a {
+    float: left;
+    color: white;
+    text-decoration: none;
+  }
+
+  /* Add a grey background color on hover */
+  .sub-menu-content a:hover {
+    background-color: #eee;
+    color: black;
+  }
+  
+  /* When you move the mouse over the subnav container, open the subnav content */
+  .sub-menu:hover .sub-menu-content {
+    display: block;
+  }
